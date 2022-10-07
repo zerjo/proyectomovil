@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button menu="main-menu">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-content>
+    <ion-img src="assets/icon/sedes.jpg"></ion-img>
+      <ion-item>
+        <ion-label  position="floating" style="margin: auto;"> ingese su destino</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Seleccione metodo de pago</ion-label>
+          <ion-select placheholder="Seleccione pago">
+            <ion-select-option value="Targeta debito"> Targeta Debito</ion-select-option>
+            <ion-select-option value="Targeta credito"> Targeta Credito</ion-select-option>
+            <ion-select-option value="Efectivo"> Efectivo</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Sede</ion-label>
+          <ion-select placheholder="Seleccione sede">
+            <ion-select-option value="San Joaquin"> San Joaquin</ion-select-option>
+            <ion-select-option value="Puente alto"> Puente Alto</ion-select-option>
+            <ion-select-option value="Viña Del Mar"> Viña Del Mar</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-button style="margin-left:70px;">Buscar</ion-button>
+  </ion-card-content>
+</ion-content>
